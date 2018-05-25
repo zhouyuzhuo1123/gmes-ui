@@ -1,0 +1,15 @@
+[
+  {
+    "name": "GMES-UI",
+    "children": [
+      {
+        "path": "gloading",
+        "name": "gloading"
+      },
+       {
+        "path": "radio",
+        "name": "radio"
+      }
+    ]
+  }
+]

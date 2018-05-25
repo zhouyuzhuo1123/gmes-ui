@@ -1,0 +1,1 @@
+import './defined.scss'

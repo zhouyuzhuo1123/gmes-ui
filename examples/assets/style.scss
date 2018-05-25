@@ -1,0 +1,70 @@
+body,button,dd,dl,dt,fieldset,form,
+h1,h2,h3,h4,h5,h6,hr,input,legend,
+li,ol,p,pre,td,textarea,th,ul {margin: 0;padding:0;outline:none;}
+
+address,cite,dfn,em,var,i{font-style:normal;}
+strong {font-weight:normal;}
+small {font-size:12px}
+ol,ul,li {list-style:none}
+a{text-decoration:none;}
+a:hover{text-decoration:none}
+legend{color:#000}
+button,input,select,textarea{font-size:100%}
+table {border-collapse:collapse;border-spacing:0;}
+
+/* --------------------single CSS start----------------------- */
+* {
+    padding:0px;
+    margin:0px;
+}
+
+.gmes-md{
+  a{opacity:0;margin-left: -18px;}
+  h3{
+    font-size:1.3rem;
+    margin:20px 0;
+  }
+  padding:0 0 20px 0;
+  blockquote{
+      padding: 0 1em;
+      color: #6a737d;
+      border-left: 0.25em solid #dfe2e5;
+      margin: 16px 0;
+    p{
+
+    }
+  }
+  .code{
+    padding: 16px;
+    overflow: auto;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f6f8fa;
+    border-radius: 3px;
+  }
+  code{
+    color: #666;
+  }
+  table{
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #fff;
+    font-size: 14px;
+    margin-bottom: 45px;
+    line-height: 1.5em;
+
+    th, td{
+      border-bottom: 1px solid #d8d8d8;
+      padding: 15px;
+      max-width: 250px;
+      text-align: left;
+      white-space: nowrap;
+      color: #666;
+      font-weight: 400;
+    }
+    th{
+      font:bold 14px Microsoft YaHei;
+      color:#000;
+    }
+  }
+}
