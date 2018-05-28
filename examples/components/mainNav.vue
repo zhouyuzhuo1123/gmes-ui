@@ -29,11 +29,12 @@
 .body-left{
 	width: 260px;
 	padding: 20px 0;
-	display: flex;
+	position:fixed;
 	overflow: auto;
 	.side-nav{
 		margin: 0;
 		padding: 0;
+		width:260px;
 		.title{
 		  font-size: 18px;
 		  color: #333;

@@ -1,14 +1,15 @@
 <template>
   <div id="app">
     <div class="header">
-      <div style="width:1200px;margin:0 auto;height:50px;
-    align-items: center;display:flex;">
-        <img src="./assets/evun_logo.png"/>
+      <div style="width:1200px;margin:0 auto;height:50px;line-height:50px;position:relative">
+        <img src="./assets/evun_logo.png" style="display:inline-block;vertical-align: middle;"/>
       </div>
     </div>
-    <div class="body">
-      <main-nav></main-nav>
-      <div class="body-right gmes-md"><router-view/></div>
+    <div class="body g-scroll">
+      <div class="body-content">
+        <main-nav></main-nav>
+        <div class="body-right gmes-md"><router-view/></div>
+      </div>
     </div>
   </div>
 </template>
@@ -38,18 +39,28 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
+  height:100%;
+  overflow-y: hidden;
   .body{
-    display:flex;
+    width:100%;
+    height: 100%;
+    overflow-y: scroll;
+  }
+  .body-content{
     width: 1200px;
-    margin: 0 auto;
+    margin: 50px auto 0;
     .body-right{
-      flex:1
+      margin-left:260px;
+      height:100%;
     }
   }
   .header{
     background: #444;
     color: #FFF;
     height: 50px;
+    position: fixed;
+    width: 100%;
+    top: 0;
   }
   .img{
     width:1000px;

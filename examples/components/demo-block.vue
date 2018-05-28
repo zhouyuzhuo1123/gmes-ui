@@ -145,6 +145,7 @@
       overflow: hidden;
       height: 0;
       transition: height .2s;
+      padding:0 20px;
     }
 
     .description {

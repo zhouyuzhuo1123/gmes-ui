@@ -6,9 +6,13 @@
         "path": "gloading",
         "name": "gloading"
       },
-       {
+      {
         "path": "radio",
         "name": "radio"
+      },
+      {
+        "path": "tablecanvas",
+        "name": "tablecanvas"
       }
     ]
   }
