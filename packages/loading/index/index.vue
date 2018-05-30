@@ -19,7 +19,9 @@
                     </div>
                     <div class="exhaust"></div>
                 </div>
+                <p class="message">{{message}}</p>
             </div>
+
 		</div>
 	</div>
 </template>
@@ -29,6 +31,7 @@
 			return {
                 name:'GEELY',
                 visible:false,
+                message:'没有权限'
 			}
 		}
 

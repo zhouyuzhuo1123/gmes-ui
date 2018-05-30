@@ -30,13 +30,14 @@ export default {
     }
   },
   mounted(){
-   const myload =  this.$Gloading.server();
+ 
    const myload2 = this.$Gloading.server({
     name:'ZYZ',
+    message:'你大爷'
    });  
-   console.log(myload === myload2)
+
    setTimeout(()=>{
-    myload2.close();
+    //myload2.close();
    },2000)
   },
 }

@@ -1,7 +1,10 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import navJson from '../nav.config.json'
-Vue.use(Router)
+import helloComponent from '../components/HelloWorld.vue';
+
+Vue.use(Router);
+
 const LOAD_MAP = name => {
  	return r => require.ensure([], () =>
       r(require(`../docs/${name}.md`))
@@ -10,8 +13,10 @@ const LOAD_MAP = name => {
 const load = function(path) {
   return LOAD_MAP(path);
 };
-const routes =  [
-   
+const routes =  [{
+	path: '/hello',
+	name: 'hello',
+	component: helloComponent}
 ]
 
 navJson.forEach((item,i)=>{

@@ -8,10 +8,9 @@ import carUi from '../src/index'
 import './assets/defined.js'
 //上面是开发模式
 //下面是打包后的
-//import '../css/static/app.css'
-//import carUi from '../libs/app'
+/*import '../css/static/app.css'
+import carUi from '../libs/app'*/
 import demoBlock from './components/demo-block.vue';
-
 Vue.use(carUi)
 Vue.component('demo-block', demoBlock);
 new Vue({
