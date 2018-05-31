@@ -1,8 +1,8 @@
 <template>
-	<div class="gl-loading-mask" v-show="visible">
+	<div class="gl-loading-mask" :style="{backgroundColor:'rgba(255, 255, 255, '+opacity+')'}" v-show="visible">
 		<div class="gl-loading-spinner">
     		<div class="carcontent">
-                <div class="car">
+                <div class="car" :style="{transform:'scale('+scale+')'}">
                     <div class="car_top1"></div>
                     <div class="car_top2"></div>
                     <div class="car_win1"></div>
@@ -31,7 +31,9 @@
 			return {
                 name:'GEELY',
                 visible:false,
-                message:'没有权限'
+                message:'',
+                opacity:0.8,
+                scale:0.8
 			}
 		}
 
