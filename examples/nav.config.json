@@ -3,6 +3,10 @@
     "name": "GMES-UI",
     "children": [
       {
+        "path": "guide",
+        "name": "介绍"
+      },
+      {
         "path": "gloading",
         "name": "gloading"
       },
