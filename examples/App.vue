@@ -55,7 +55,7 @@ export default {
     }
   }
   .header{
-    background: #444;
+    background: #20a0ff;
     color: #FFF;
     height: 50px;
     position: fixed;
