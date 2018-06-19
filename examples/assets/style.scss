@@ -30,6 +30,12 @@ body,html{
       opacity:0;margin-left: -18px;
     }
   }
+  h1{
+    font-size:22px;
+  }
+  h2{
+    font-size:18px;
+  }
   code, kbd, pre, samp {
     font-family: Consolas,Menlo,Courier,monospace;
   }
@@ -66,6 +72,12 @@ body,html{
 
     }
   }
+  pre{
+    margin: 16px 0;
+    padding: 16px;
+    background-color: #f7f7f7;
+    overflow: auto;
+  }
   .code{
     padding: 16px;
     overflow: auto;
@@ -75,12 +87,9 @@ body,html{
     border-radius: 3px;
   }
   code{
-    padding: 2px 6px;
     font-size: 14px;
     vertical-align: middle;
-    border: 1px solid #ececec;
     border-radius: 2px;
-    background-color: #f7f7f7;
   }
   table{
     border-collapse: collapse;

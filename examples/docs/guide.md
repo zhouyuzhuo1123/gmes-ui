@@ -15,4 +15,4 @@
 
 ## 贡献
 
-如果你在使用 `GMES-UI` 时遇到问题，或者有好的建议，
+如果你在使用 `GMES-UI` 时遇到问题，或者有好的建议，欢迎给我们提 [Issue](https://github.com/zhouyuzhuo1123/gmes-ui/issues) 或 [Pull Request](https://github.com/zhouyuzhuo1123/gmes-ui/pulls)

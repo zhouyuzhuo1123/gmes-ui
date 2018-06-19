@@ -1,11 +1,24 @@
 [
-  {
-    "name": "GMES-UI",
+   {
+    "name": "开发指南",
     "children": [
       {
         "path": "guide",
         "name": "介绍"
       },
+      {
+        "path": "install",
+        "name": "安装"
+      },
+      {
+        "path": "update",
+        "name": "更新日志"
+      }
+    ]
+  },
+  {
+    "name": "组件",
+    "children": [
       {
         "path": "gloading",
         "name": "gloading"

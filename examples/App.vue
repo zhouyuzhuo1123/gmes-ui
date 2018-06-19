@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div class="header">
-      <div style="width:1200px;margin:0 auto;height:50px;line-height:50px;position:relative">
+      <div style="width:1200px;margin:0 auto;height:60px;line-height:60px;position:relative">
         <img src="./assets/evun_logo.png" style="display:inline-block;vertical-align: middle;"/>
       </div>
     </div>
@@ -35,8 +35,6 @@ export default {
 @import 'highlight.js/styles/color-brewer.css';
 
 #app {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
   height:100%;
   overflow-y: hidden;
@@ -60,6 +58,7 @@ export default {
     position: fixed;
     width: 100%;
     top: 0;
+    box-shadow: 0 10px 60px 0 rgba(29,29,31,.07);
   }
   .img{
     width:1000px;
