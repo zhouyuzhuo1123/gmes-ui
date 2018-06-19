@@ -136,7 +136,7 @@
     }
 
     .source {
-      padding: 24px;
+      padding: 30px;
     }
 
     .meta {

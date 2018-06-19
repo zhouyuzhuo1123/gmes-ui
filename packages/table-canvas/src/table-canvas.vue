@@ -129,6 +129,7 @@ export default {
             context.lineTo(a_canvas.width, y-0.5);
         }
         //由于画布划线是画在 像素中线 所以当linewidth = 奇数时 会导致 左右都0.5 由于浏览器像素最小为1 导致0.5被自动补全。
+        //当坐标点（8.5--11.5）+10*n;有效
         context.stroke();
     },
     
