@@ -4,7 +4,12 @@
 			return {
 				zyz:'',
 			}
-		}
+		},
+		beforeRouteLeave (to, from , next) {
+		    next(vm => {
+		    	vm.zyz = 'b'
+		    });
+		},
 	}
 </script>
 
@@ -23,7 +28,7 @@ export default {
     	return {
     		zyz:'',
     	}
-    }
+    },
 }
 </script>
 

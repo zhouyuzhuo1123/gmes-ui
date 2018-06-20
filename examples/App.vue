@@ -1,14 +1,25 @@
 <template>
   <div id="app">
     <div class="header">
-      <div style="width:1200px;margin:0 auto;height:60px;line-height:60px;position:relative">
-        <img src="./assets/evun_logo.png" style="display:inline-block;vertical-align: middle;"/>
+      <div style="width:90%;margin:0 auto;height:80px;line-height:80px;position:relative">
+        <img src="./assets/evun_logo.png" width="100px" style="display:inline-block;vertical-align: middle;"/>
+        <span style="float:right;color:#20a0ff">组件</span>
       </div>
     </div>
     <div class="body g-scroll">
-      <div class="body-content">
+      <div class="body-content" v-if="isHome">
         <main-nav></main-nav>
         <div class="body-right gmes-md"><router-view/></div>
+      </div>
+      <div class="body-content" v-else>
+        <div class="homePage">
+          <img src="./assets/logo.png" width="260" />
+          <p class="des">一款轻量级、模块化的前端 UI 组件库</p>
+        </div>
+        <div class="footer">
+            <a @click="goInit">开始使用</a>
+            <a href="https://github.com/zhouyuzhuo1123/gmes-ui">github</a>
+        </div>
       </div>
     </div>
   </div>
@@ -21,11 +32,25 @@ export default {
   name: 'App',
   data(){
     return {
-      
+     isHome:false,
     }
   },
   components:{
     mainNav
+  },
+  created(){
+    this.isHome = /\w/.test(window.location.hash) ? true : false
+  },
+  methods:{
+    goInit(){
+      this.isHome = true;
+      this.$router.push('/install');
+    }
+  },
+  watch:{
+    $route(newVal,old){
+      this.isHome = /\w/.test(window.location.hash) ? true : false
+    }
   }
 }
 </script>
@@ -44,24 +69,63 @@ export default {
     overflow-y: scroll;
   }
   .body-content{
-    width: 1200px;
-    margin: 50px auto 0;
+    width: 88%;
+    margin: 80px auto 0;
     .body-right{
       margin-left:260px;
       height:100%;
     }
+    .homePage{
+      width: 100%;
+      margin: 0 auto;
+      text-align: center;
+      padding: 150px 0;
+      .des{
+        margin-top: 56px;
+        color: #8994c6;
+        font-size: 32px;
+      }
+    }
   }
   .header{
-    background: #20a0ff;
-    color: #FFF;
-    height: 60px;
+    height: 80px;
     position: fixed;
     width: 100%;
     top: 0;
-    box-shadow: 0 10px 60px 0 rgba(29,29,31,.07);
+   // box-shadow: 0 10px 60px 0 rgba(29,29,31,.07);
   }
   .img{
     width:1000px;
+  }
+  .footer{
+    position:relative;
+    text-align:center;
+    a{
+      color: #316de9;
+      padding: 8px 24px;
+      margin: 30px;
+      font-size: 28px;
+      border-radius: 28px;
+      border: 1px solid #316de9;
+      display: inline-block;
+      width: 150px;
+      cursor: default;
+    }
+  }
+  .footer:after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: -80px;
+    width: 100%;
+    height: 250px;
+    background: #fff;
+    -webkit-box-shadow: 0 -4px 30px 0 #dfe1e6;
+    box-shadow: 0 -4px 30px 0 #dfe1e6;
+    -webkit-transform: skewY(-4deg);
+    transform: skewY(-4deg);
+    z-index: -1;
+    
   }
 }
 </style>
