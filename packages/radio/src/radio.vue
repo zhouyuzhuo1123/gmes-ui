@@ -1,9 +1,12 @@
 <template>
 	<label class="gl_radio"
-		:class="{
-			'gl_radio_checked':model === label,
-			'gl_radio_disabled':disabled
-		}"
+		:class="[
+			size ? 'gl_radio_'+size : '',
+			{
+				'gl_radio_checked':model === label,
+				'gl_radio_disabled':disabled
+			}
+		]"
 	>
 		<span><slot></slot></span>
 		<input 
@@ -36,9 +39,13 @@
 			}
 		},
 		props:{
+			size:{
+				type:String,
+				default:''
+			},
 			value:{},
 			label:{},
-		  disabled:Boolean,
+		  	disabled:Boolean,
 		}
 	}
 </script>

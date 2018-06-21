@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
     <gl-form-input :styles="formInputstyle" swMode="x" :items="configEnums"></gl-form-input>
-    <gl-input-button title="zyz"></gl-input-button>
+    <gl-input-button title="名称" v-model="value" :autoFocus="true"></gl-input-button>
     <gl-radio v-model="zyz" label="b">a</gl-radio>
     <gl-radio v-model="zyz" label="a">b</gl-radio>
     <gl-radio v-model="zyz" label="c">c</gl-radio>
@@ -14,15 +14,17 @@
       selectc="#ff5000"
       :canvasImg="img"
     ></gl-table-canvas>
+    <i class="gl-icon-quanpin"></i>
   </div>
 </template>
 
 <script>
-  //import { Loading } from '../../src/index'
+  import { Gloading } from '../../src/index'
 export default {
   name: 'HelloWorld',
   data(){
     return {
+      value:'aa',
       formInputstyle:{color:'#FF5000',fontSize:'1.2rem',margin:'10px 0'},
       configEnums:[[{name:'key',value:'test'},{name:'key',value:'test'},{name:'key',value:'test'}]],
       zyz:'',
@@ -30,8 +32,8 @@ export default {
     }
   },
   mounted(){
- 
-   const myload2 = this.$Gloading.server({
+    console.log(Gloading)
+   const myload2 = Gloading.server({
     name:'ZYZ',
     message:'你大爷'
    });  

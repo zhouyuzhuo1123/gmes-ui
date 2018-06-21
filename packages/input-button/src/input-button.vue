@@ -1,7 +1,7 @@
 <template>
 	<div class="gl-input-serach-btn">
 		<label>{{title}}</label>
-		<input class="gl-input-serach" type="text" :disabled="disabled" v-auto-focus="autoFocus" @input="$emit('input', $event.target.value)" v-bind="$props" placeholder="请输入内容"/>
+		<input class="gl-input-serach" type="text" :disabled="disabled" v-auto-focus="autoFocus" @input="$emit('input', $event.target.value)" v-bind="$props" :placeholder="placeholder"/>
 		<slot name="btn"></slot>
 	</div>
 </template>
@@ -35,6 +35,10 @@
 		      type :Boolean,
 		      default:false
 		    },
+		    placeholder:{
+		      type: String,
+		      default: '请输入内容'
+		    }
 		}
 	}
 </script>

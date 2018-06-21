@@ -5,7 +5,7 @@ var cssmin = require('gulp-cssmin');
 var salad = require('postcss-salad')(require('./salad.config.json'));
 
 gulp.task('compile', function() {
-  return gulp.src('./src/index.css')
+  return gulp.src('./src/*.*')
   	.pipe(postcss([sass]))
     .pipe(postcss([salad]))
     .pipe(cssmin())

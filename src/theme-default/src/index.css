@@ -1,3 +1,4 @@
-@import "./default.scss";
-@import "./common.scss";
-@import "./loading.scss";
+@import "./default.css";
+@import "./common.css";
+@import "./loading.css";
+@import "./iconfont.css";
