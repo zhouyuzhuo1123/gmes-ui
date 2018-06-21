@@ -2,29 +2,25 @@
 
 > A Vue.js project
 
-## Build Setup
+## 安装
 
-``` bash
-# install dependencies
-npm install
+- yarn
 
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-
-# run unit tests
-npm run unit
-
-# run e2e tests
-npm run e2e
-
-# run all tests
-npm test
+```bash
+yarn add gmes-ui
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+- npm 
+
+```bash
+npm install gmes-ui --save
+```
+
+## 使用
+
+```js
+import gmesUi from 'gmes-ui' // 引入组件库
+import 'gmes-ui/index.css' // 引入样式库
+
+Vue.use(gmesUi)
+```
