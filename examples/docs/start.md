@@ -7,7 +7,7 @@
 
 > 在使用之前，推荐学习 `Vue` 和 `ES2015` ，并正确配置 `Node.js` v6.x 或以上版本
 
-`VV-UI` 基于 `Vue.js` 2.x+ 版本开发，所以有必要了解以下基础知识：
+`gmes-ui` 基于 `Vue.js` 2.x+ 版本开发，所以有必要了解以下基础知识：
 - [Vue 组件](https://cn.vuejs.org/v2/guide/components.html)
 - [单文件组件](https://cn.vuejs.org/v2/guide/single-file-components.html)
 
@@ -19,7 +19,7 @@
 > npm i -g vue-cli
 > mkdir my-project && cd my-project
 > vue init webpack
-> npm i && npm i element-ui
+> npm i && npm i gmes-ui
 ```
 
 ## 标准开发
