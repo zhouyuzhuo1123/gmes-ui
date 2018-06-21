@@ -15,6 +15,8 @@
 
 ### Gloading 提示框
 
+> 单独使用
+
 :::demo
 ```html
 import { Gloading } from 'gmes-ui';
@@ -24,6 +26,7 @@ load.close()
 ```
 :::
 
+> vue 实类方法使用
 :::demo
 ```html
 

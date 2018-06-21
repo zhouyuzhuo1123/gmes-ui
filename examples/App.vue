@@ -91,6 +91,8 @@ export default {
     height: 80px;
     position: fixed;
     width: 100%;
+    background:#fff;
+    z-index:999;
     top: 0;
    // box-shadow: 0 10px 60px 0 rgba(29,29,31,.07);
     .content{

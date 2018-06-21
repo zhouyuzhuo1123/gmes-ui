@@ -40,7 +40,7 @@
 		width:260px;
 		.title{
 			padding: 0 24px 8px;
-    		text-transform: uppercase;
+    	text-transform: uppercase;
 		  font-size: 16px;
 		  color: #333;
 		  line-height: 40px;
@@ -61,7 +61,7 @@
 		  height: 40px;
 		  color: #7f8c8d;
 		  line-height: 40px;
-		  font-size: 16px;
+		  font-size: 14px;
 		  overflow: hidden;
 		  white-space: nowrap;
 		  text-overflow: ellipsis;
