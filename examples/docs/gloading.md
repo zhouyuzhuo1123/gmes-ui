@@ -19,6 +19,14 @@
 ```html
 import { Gloading } from 'gmes-ui';
 
+const load = Gloading.server({});
+load.close()
+```
+:::
+
+:::demo
+```html
+
 const load = this.$Gloading.server({});
 load.close()
 ```

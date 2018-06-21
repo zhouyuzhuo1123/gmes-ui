@@ -1,9 +1,9 @@
 <template>
   <div id="app">
     <div class="header">
-      <div style="width:90%;margin:0 auto;height:80px;line-height:80px;position:relative">
-        <img src="./assets/evun_logo.png" width="100px" style="display:inline-block;vertical-align: middle;"/>
-        <span style="float:right;color:#20a0ff">组件</span>
+      <div class="content">
+        <img src="./assets/evun_logo.png" width="100px" />
+        <span>组件</span>
       </div>
     </div>
     <div class="body g-scroll">
@@ -79,7 +79,7 @@ export default {
       width: 100%;
       margin: 0 auto;
       text-align: center;
-      padding: 150px 0;
+      padding: 130px 0;
       .des{
         margin-top: 56px;
         color: #8994c6;
@@ -93,6 +93,21 @@ export default {
     width: 100%;
     top: 0;
    // box-shadow: 0 10px 60px 0 rgba(29,29,31,.07);
+    .content{
+      width:90%;
+      margin:0 auto;
+      height:80px;
+      line-height:80px;
+      position:relative;
+      span{
+        float:right;
+        color:#20a0ff
+      }
+      img{
+        display:inline-block;
+        vertical-align: middle;
+      }
+    }
   }
   .img{
     width:1000px;

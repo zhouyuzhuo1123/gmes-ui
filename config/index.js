@@ -50,6 +50,7 @@ module.exports = {
     // Paths
     assetsRoot: path.resolve(__dirname, '../libs'),
     assetsCssRoot: path.resolve(__dirname, '../css'),
+    assetsAppRoot: path.resolve(__dirname, '../dist'),
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
 

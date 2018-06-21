@@ -27,7 +27,6 @@ const webpackConfig = merge(baseWebpackConfig, {
   output: {
     path: config.build.assetsRoot,
     filename: 'app.js',
-    libraryTarget:'umd'
   },
   plugins: [
     // http://vuejs.github.io/vue-loader/en/workflow/production.html
