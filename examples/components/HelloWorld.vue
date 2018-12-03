@@ -19,7 +19,7 @@
 </template>
 
 <script>
-  import { Gloading } from '../../src/index'
+  import { Notify } from '../../src/index'
 export default {
   name: 'HelloWorld',
   data(){
@@ -32,15 +32,22 @@ export default {
     }
   },
   mounted(){
-    console.log(Gloading)
-   const myload2 = Gloading.server({
+   const h = this.$createElement;
+   Notify({
     name:'ZYZ',
-    message:'你大爷'
+    message:h('div',['你打宵夜就像阿斯']),
    });  
 
    setTimeout(()=>{
-    //myload2.close();
-   },2000)
+      Notify({
+        position:'top-right',
+        duration:0,
+        message:'找你妹'
+      }); 
+   },1000)
+   setTimeout(()=>{
+    // Notify.closeAll()
+   },1000)
   },
 }
 </script>

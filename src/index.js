@@ -7,6 +7,7 @@ import tab 						from '../packages/tab/index';
 import tableCanvas 		from '../packages/table-canvas/index';
 
 import Gloading    from '../packages/loading/index';
+import Notify    from '../packages/notification/index';
 
 import directive from './directives'
 
@@ -25,6 +26,7 @@ const install = function(Vue, opts = {}){
   });
   directive(Vue)
   Vue.prototype.$Gloading = Gloading
+  Vue.prototype.$Notify = Notify
 }
 
 export {
@@ -35,6 +37,7 @@ export {
   tab,
   tableCanvas,
   Gloading,
+  Notify
 }
 
 export default {
@@ -45,5 +48,6 @@ export default {
   radio,
   tab,
   tableCanvas,
-  install
+  install,
+  Notify
 }
